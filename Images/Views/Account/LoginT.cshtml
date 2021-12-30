@@ -1,0 +1,103 @@
+﻿@using Images.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Service login form Responsive Widget Template : W3Layouts</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="signinform">
+        <h1>Service Login Form</h1>
+        <!-- container -->
+        <section id="loginForm">
+            @using (Html.BeginForm("LoginT", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="container">
+                    <!-- main content -->
+                    <div class="w3l-form-info">
+                        <div class="w3_info">
+                            <h2>Login</h2>
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <div class="checkbox">
+                                        @Html.CheckBoxFor(m => m.RememberMe)
+                                        @Html.LabelFor(m => m.RememberMe)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Log in" class="btn btn-default" />
+                                </div>
+                            </div>
+                            <p>
+                                @Html.ActionLink("Register as a new user", "Register")
+                            </p>
+                            @*<p class="continue"><span>or Login with</span></p>
+                            <div class="social-login">
+                                <a href="#facebook">
+                                    <div class="facebook">
+                                        <span class="fab fa-facebook-f" aria-hidden="true"></span>
+
+                                    </div>
+                                </a>
+                                <a href="#twitter">
+                                    <div class="twitter">
+                                        <span class="fab fa-twitter" aria-hidden="true"></span>
+                                    </div>
+                                </a>
+                                <a href="#google">
+                                    <div class="google">
+                                        <span class="fab fa-google" aria-hidden="true"></span>
+                                    </div>
+                                </a>
+                            </div>*@
+                            <p class="account">Don't have an account? <a href="#signup">Sign up</a></p>
+                        </div>
+                    </div>
+                    <!-- //main content -->
+                </div>
+            }
+        </section>
+        <div class="col-md-4">
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>
+    </div>
+</body>
+</html>
