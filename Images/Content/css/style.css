@@ -110,12 +110,12 @@ img {
 
 /*-- form styling --*/
 .signinform {
-    padding: 40px 40px;
+    padding: 250px;
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 input[type="text"],
@@ -165,8 +165,6 @@ input[type="Password"] {
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     border: none;
     text-transform: capitalize;
 }
@@ -223,9 +221,9 @@ input[type="Password"] {
 
 .w3_info h4 {
     display: inline-block;
-    font-size: 15px;
+    font-size: 30px;
     padding: 8px 0px;
-    color: #444;
+    color: #ea4335;
     text-transform: capitalize;
 }
 
