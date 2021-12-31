@@ -132,11 +132,12 @@ img {
 input[type="text"],
 input[type="email"],
 input[type="Password"] {
+    border-style:ridge;
     font-size: 17px;
     font-weight: 500;
     color: #000;
     text-align: left;
-    padding: 16px 15px 12px 35px;
+    padding: .5em 1em;
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
@@ -144,7 +145,14 @@ input[type="Password"] {
     outline: none;
     background: transparent;
     letter-spacing: .5px;
-    
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
 }
 
 .input-group {
@@ -165,20 +173,22 @@ input[type="Password"] {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #9146ff;
-    margin-top: 30px;
-    outline: none;
+    background: #c4514c;
+    background: #000;
+    color: #FFF;
+    font-size: 16px;
+    padding: .5em 1em;
     width: 100%;
-    padding: 15px 15px;
+    letter-spacing: 2px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
+    outline: none;
     border: none;
-    text-transform: capitalize;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 

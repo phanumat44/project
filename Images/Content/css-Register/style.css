@@ -186,18 +186,6 @@ i.fa.fa-facebook, i.fa.fa-twitter, i.fa.fa-google-plus {
     background: transparent;
 	font-family: 'Noto Sans', sans-serif;
 }
-.header-left-bottom input[type="tel"] {
-    outline: none;
-    font-size: 15px;
-    font-weight: 400;
-    color: #000;
-	border:none;
-    width: 90%;
-    padding-left: 15px;
-    display: inline-block;
-    background: transparent;
-	font-family: 'Noto Sans', sans-serif;
-}
 .header-left-bottom input[type="password"]{
   outline: none;
   font-size: 15px;
@@ -211,13 +199,14 @@ i.fa.fa-facebook, i.fa.fa-twitter, i.fa.fa-google-plus {
 	font-family: 'Noto Sans', sans-serif;
 }
 .header-left-bottom input[type="submit"] {
-    background: #c4514c;
-    background: #4CAF50;
+    background: #000;
+    background: #000;
     color: #FFF;
     font-size: 16px;
     padding: .5em 1em;
-    width: 37%;
+    width: 100%;
     letter-spacing: 0px;
+	justify-items:center;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;

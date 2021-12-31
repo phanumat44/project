@@ -25,7 +25,6 @@
 </head>
 <body>
     <div class="signinform">
-        <h1>Welcome To Images Shot</h1>
         <!-- container -->
         <section id="loginForm">
             @using (Html.BeginForm("LoginT", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -37,14 +36,14 @@
                         <div class="w3_info">
                             <h2>Login</h2>
                             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                            <div class="form-group">
+                            <div class="input-group">
                                 @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
                                 <div class="col-md-10">
                                     @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                                     @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="input-group">
                                 @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
                                 <div class="col-md-10">
                                     @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
@@ -58,7 +57,7 @@
                                     <label for="remenber"> Remember me?</label>
                                 </div>
                                 <p>
-                                    @Html.ActionLink("Forgot password?", "ForgotPassword")
+                                    @Html.ActionLink("Forgot password?", "ForgotPasswordT")
                                 </p>
                             </div>
                             <div class="form-row bottom">

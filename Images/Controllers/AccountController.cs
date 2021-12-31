@@ -197,7 +197,11 @@ namespace Images.Controllers
         //
         // GET: /Account/ForgotPassword
         [AllowAnonymous]
-        public ActionResult ForgotPassword()
+        //public ActionResult ForgotPassword()
+        //{
+        //    return View();
+        //}
+        public ActionResult ForgotPasswordT()
         {
             return View();
         }
@@ -207,7 +211,7 @@ namespace Images.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        public async Task<ActionResult> ForgotPasswordT(ForgotPasswordViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -251,7 +255,7 @@ namespace Images.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> ResetPassword(ResetPasswordViewModel model)
+        public async Task<ActionResult> ResetPasswordT(ResetPasswordViewModel model)
         {
             if (!ModelState.IsValid)
             {

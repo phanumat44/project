@@ -189,6 +189,7 @@
     <Content Include="Content\css-Register\style.css" />
     <Content Include="Content\css-Register\style1.css" />
     <Content Include="Content\css-Register\styleRe.css" />
+    <Content Include="Content\css-Reset\style.css" />
     <Content Include="Content\css\all.css" />
     <Content Include="Content\css\all.min.css" />
     <Content Include="Content\css\brands.css" />
@@ -288,6 +289,7 @@
     <Content Include="Views\Art\art.cshtml" />
     <Content Include="Views\Account\LoginT.cshtml" />
     <Content Include="Views\Account\RegisterT.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
