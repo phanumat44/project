@@ -64,10 +64,26 @@ namespace Images.Models
 
     public class RegisterViewModel
     {
+        [Display(Name = "First Name")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "First name required")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Last name required")]
+        public string LastName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Display(Name = "Bank Name")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Bank Name required")]
+        public string BankName { get; set; }
+
+        [Display(Name = "Bank ID")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Bank ID required")]
+        public string BankID { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]

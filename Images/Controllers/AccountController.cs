@@ -142,7 +142,11 @@ namespace Images.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
-        public ActionResult Register()
+        //public ActionResult Register()
+        //{
+        //    return View();
+        //}
+        public ActionResult RegisterT()
         {
             return View();
         }
@@ -152,7 +156,7 @@ namespace Images.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> RegisterT(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {

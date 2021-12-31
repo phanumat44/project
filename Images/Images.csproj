@@ -185,6 +185,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css-Register\font-awesome.css" />
+    <Content Include="Content\css-Register\style.css" />
+    <Content Include="Content\css-Register\style1.css" />
+    <Content Include="Content\css-Register\styleRe.css" />
     <Content Include="Content\css\all.css" />
     <Content Include="Content\css\all.min.css" />
     <Content Include="Content\css\brands.css" />
@@ -203,6 +207,8 @@
     <Content Include="Content\css\v4-shims.min.css" />
     <Content Include="Content\images\0.jpg" />
     <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\bg6.jpg" />
     <Content Include="Content\images\f.jpg" />
     <Content Include="Content\images\img.png" />
     <Content Include="Content\images\pd1.jpg" />
@@ -214,17 +220,25 @@
     <Content Include="Content\images\pd7.jpg" />
     <Content Include="Content\images\pd8.jpg" />
     <Content Include="Content\images\ptop.png" />
+    <Content Include="Content\images\regis.png" />
     <Content Include="Content\images\s.jpg" />
     <Content Include="Content\images\t.jpg" />
+    <Content Include="Content\images\tick.png" />
     <Content Include="Content\images\tt.jpg" />
     <Content Include="Content\images\vit.jpg" />
     <Content Include="Content\js\scripts.js" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -273,6 +287,7 @@
     <Content Include="Views\Shared\_LayoutAll.cshtml" />
     <Content Include="Views\Art\art.cshtml" />
     <Content Include="Views\Account\LoginT.cshtml" />
+    <Content Include="Views\Account\RegisterT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
