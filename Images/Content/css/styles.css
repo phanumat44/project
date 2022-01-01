@@ -7770,6 +7770,10 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
+/*.text-light:hover {
+    --bs-text-opacity: 1;
+    color: black !important;*/
+}
 
 .text-dark {
   --bs-text-opacity: 1;
