@@ -36,6 +36,9 @@ body{
     background-attachment: fixed;
 	background-position: center;
 }
+.text-danger {
+	color: #a94442;
+}
 body a{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;

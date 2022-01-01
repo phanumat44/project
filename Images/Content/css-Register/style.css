@@ -573,6 +573,9 @@ i.fa.fa-facebook, i.fa.fa-twitter, i.fa.fa-google-plus {
 		width: 86%;
 		padding: 2em 1em;
 	}
+	.text-danger {
+		color: #a94442;
+	}
 	.icon1 {
 		margin: 0 0 .5em;
 	}
